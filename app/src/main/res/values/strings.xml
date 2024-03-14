@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidProjectCollection</string>
+    <string name="project_title">Layout Exercise</string>
+    <string name="button">Button</string>
+    <string name="button_like">Like</string>
+    <string name="button_share">Share</string>
+    <string name="comment">Comment</string>
+    <string name="place_holder_1">Text View</string>
+    <string name="place_holder">Place Holder</string>
+</resources>

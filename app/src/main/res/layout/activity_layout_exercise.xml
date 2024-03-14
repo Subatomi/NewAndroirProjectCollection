@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LayoutExercise">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/godfrey"
+                        tools:srcCompat="@drawable/godfrey" />
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/marika"
+                        tools:srcCompat="@drawable/marika" />
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/tarnished"
+                        tools:srcCompat="@drawable/tarnished" />
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FBFBFB"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/melina"
+                        tools:srcCompat="@drawable/melina" />
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/miquella" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/ranni"
+                        tools:srcCompat="@drawable/ranni" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/yura" />
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="112dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:contentDescription="@string/place_holder"
+                        app:srcCompat="@drawable/godwyn" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/place_holder"
+                    app:srcCompat="@drawable/elden"
+                    tools:srcCompat="@drawable/elden" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/button_like" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/button_share" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/comment" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/elden" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Button" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
