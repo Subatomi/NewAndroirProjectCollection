@@ -12,25 +12,47 @@
         android:background="#000000"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/equationUpper"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20px"
-            android:layout_marginRight="20px"
-            android:textAlignment="viewEnd"
-            android:textColor="#FFFFFF" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/equationLower"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20px"
-            android:layout_marginRight="20px"
-            android:text="0"
-            android:textAlignment="viewEnd"
-            android:textColor="#FFFFFF"
-            android:textSize="48sp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/equationUpper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:scrollHorizontally="false"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#FFFFFF" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/equationLower"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="48sp" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
 
         <TableLayout
             android:layout_width="match_parent"
@@ -44,7 +66,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/calcbutton1"
+                    android:id="@+id/calcbutton7"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -55,7 +77,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton2"
+                    android:id="@+id/calcbutton8"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -66,7 +88,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton3"
+                    android:id="@+id/calcbutton9"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -77,14 +99,14 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton4"
+                    android:id="@+id/calcbuttonDiv"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
                     android:layout_marginRight="20px"
                     android:layout_weight="1"
                     android:backgroundTint="#FE9E0A"
-                    android:text="\\"
+                    android:text="/"
                     android:textSize="24sp"
                     app:cornerRadius="15dip" />
             </TableRow>
@@ -96,7 +118,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/calcbutton5"
+                    android:id="@+id/calcbutton4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -107,7 +129,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton6"
+                    android:id="@+id/calcbutton5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -118,7 +140,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton7"
+                    android:id="@+id/calcbutton6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -129,7 +151,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton8"
+                    android:id="@+id/calcbuttonMul"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -148,7 +170,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/calcbutton9"
+                    android:id="@+id/calcbutton1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -159,7 +181,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton10"
+                    android:id="@+id/calcbutton2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -170,7 +192,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton11"
+                    android:id="@+id/calcbutton3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -181,7 +203,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton12"
+                    android:id="@+id/calcbuttonSub"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -200,7 +222,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/calcbutton13"
+                    android:id="@+id/calcbuttonDot"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -211,7 +233,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton14"
+                    android:id="@+id/calcbutton0"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -222,7 +244,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton15"
+                    android:id="@+id/calcbuttonAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
@@ -233,7 +255,7 @@
                     app:cornerRadius="15dip" />
 
                 <Button
-                    android:id="@+id/calcbutton16"
+                    android:id="@+id/calcbuttonEqual"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20px"
