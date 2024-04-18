@@ -6,59 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/project_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="BUTTON EXERCISE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layout Exercise"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="CALCULATOR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ButtonExercise"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Connect3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
 
-    <Button
-        android:id="@+id/mainBtn5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="159dp"
-        android:text="Matching3x3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        <Button
+            android:id="@+id/mainBtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Midterm"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Match 3 / Connect 3"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/mainBtn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Passing Intents"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/mainBtn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragments"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/mainBtn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menus"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
