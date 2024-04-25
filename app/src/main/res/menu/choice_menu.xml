@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mItemChange"
+        android:title="Change">
+        <menu>
+            <item
+                android:id="@+id/mItemChangeToCircle"
+                android:title="Corner" />
+            <item
+                android:id="@+id/mItemChangeColor"
+                android:title="Color" />
+            <item
+                android:id="@+id/mItemChangeGrow"
+                android:title="Grow" />
+            <item
+                android:id="@+id/mItemPositionUp"
+                android:title="GoUp" />
+            <item
+                android:id="@+id/mItemBGColor"
+                android:title="Background Color" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mItemReset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/mItemExit"
+        android:title="Exit" />
+</menu>

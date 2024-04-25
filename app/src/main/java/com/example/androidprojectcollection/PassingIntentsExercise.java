@@ -40,6 +40,28 @@ public class PassingIntentsExercise extends AppCompatActivity {
         rBSIT = findViewById(R.id.radBSIT);
         rBSCPE = findViewById(R.id.radBSCPE);
 
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eFname.setText("");
+                eLname.setText("");
+                eBdate.setText("");
+                eBplace.setText("");
+                eAddress.setText("");
+                eNum.setText("");
+                eEmailAdd.setText("");
+                eMotName.setText("");
+                eFatName.setText("");
+
+                rMale.setSelected(false);
+                rFem.setSelected(false);
+                rOth.setSelected(false);
+                rBSCS.setSelected(false);
+                rBSIT.setSelected(false);
+                rBSCPE.setSelected(false);
+            }
+        });
+
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
