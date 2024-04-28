@@ -23,6 +23,10 @@ public class MenuExercise extends AppCompatActivity {
 
     int[] color = {Color.RED, Color.BLUE, Color.YELLOW};
 
+    int width;
+    int height;
+    float position;
+
     Button btnChanger;
     float track = 0;
 
@@ -42,8 +46,17 @@ public class MenuExercise extends AppCompatActivity {
             }
         });
         btnChanger.setBackgroundColor(Color.RED);
+        saveBtn();
 
 
+    }
+
+    void saveBtn(){
+        ViewGroup.LayoutParams params = btnChanger.getLayoutParams();
+        width = params.width;
+        height = params.height;
+        ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) btnChanger.getLayoutParams();
+        position = layoutParams.verticalBias;
     }
 
     @Override
@@ -60,11 +73,16 @@ public class MenuExercise extends AppCompatActivity {
 
        if(item.getItemId() == R.id.mItemChange){
            Toast.makeText(this, "Edit Object Item is clicked", Toast.LENGTH_SHORT).show();
+
        }else if(item.getItemId() == R.id.mItemReset){
            Toast.makeText(this, "Reset Object Item is clicked", Toast.LENGTH_SHORT).show();
-           param.width = 700;
-           param.height = 300;
+           param.width = width;
+           param.height = height;
            btnChanger.setLayoutParams(param);
+
+           ConstraintLayout.LayoutParams param2 = (ConstraintLayout.LayoutParams) btnChanger.getLayoutParams();
+           param2.verticalBias = position;
+           btnChanger.setLayoutParams(param2);
 
            GradientDrawable draw = new GradientDrawable();
            draw.setCornerRadius(0);
@@ -72,12 +90,7 @@ public class MenuExercise extends AppCompatActivity {
            ConstraintLayout back = findViewById(R.id.clBG);
            back.setBackgroundColor(Color.WHITE);
 
-           if(track != 0){
-               ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) btnChanger.getLayoutParams();
-               params.verticalBias = track*-1;
-               btnChanger.setLayoutParams(params);
-               track = 0;
-           }
+
            btnChanger.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
 
 
@@ -85,14 +98,16 @@ public class MenuExercise extends AppCompatActivity {
        }else if(item.getItemId() == R.id.mItemChangeToCircle){
            GradientDrawable draw = new GradientDrawable();
            draw.setCornerRadius(2000);
+           btnChanger.setBackgroundTintList(btnChanger.getBackgroundTintList());
            btnChanger.setBackground(draw);
+
        }else if(item.getItemId() == R.id.mItemChangeColor){
            Random rand = new Random();
            int colorNum = rand.nextInt(3);
            btnChanger.setBackgroundTintList(ColorStateList.valueOf(color[colorNum]));
        }else if(item.getItemId() == R.id.mItemChangeGrow){
-           param.height = btnChanger.getLayoutParams().height + ((int) (btnChanger.getLayoutParams().height*.90));
-           param.width = btnChanger.getLayoutParams().width + ((int) (btnChanger.getLayoutParams().width*.90));
+           param.height = btnChanger.getLayoutParams().height + ((int) (btnChanger.getLayoutParams().height*.10));
+           param.width = btnChanger.getLayoutParams().width + ((int) (btnChanger.getLayoutParams().width*.10));
            btnChanger.setLayoutParams(param);
        }else if(item.getItemId() == R.id.mItemPositionUp){
            ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) btnChanger.getLayoutParams();
