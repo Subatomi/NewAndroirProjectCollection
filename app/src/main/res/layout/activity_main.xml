@@ -75,6 +75,14 @@
             android:text="Menus"
             android:textAllCaps="false"
             app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/mainBtn9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opening Maps"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

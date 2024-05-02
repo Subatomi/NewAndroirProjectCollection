@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button, button2, button3, button4, button5, button6, button7, button8;
+    Button button, button2, button3, button4, button5, button6, button7, button8, button9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +76,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, MenuExercise.class);
+                startActivity(myIntent);
+            }
+        });
+
+        button9 = (Button) findViewById(R.id.mainBtn9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, MapsExercise.class);
                 startActivity(myIntent);
             }
         });

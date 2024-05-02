@@ -53,12 +53,12 @@ public class PassingIntentsExercise extends AppCompatActivity {
                 eMotName.setText("");
                 eFatName.setText("");
 
-                rMale.setSelected(false);
-                rFem.setSelected(false);
-                rOth.setSelected(false);
-                rBSCS.setSelected(false);
-                rBSIT.setSelected(false);
-                rBSCPE.setSelected(false);
+                rMale.setChecked(false);
+                rFem.setChecked(false);
+                rOth.setChecked(false);
+                rBSCS.setChecked(false);
+                rBSIT.setChecked(false);
+                rBSCPE.setChecked(false);
             }
         });
 
